@@ -9,7 +9,12 @@ Als gebruiker wil ik een overzicht van alle projecten die in de Chippr.dev API s
 <img width="500" src="https://github.com/boudewijnbout/keep-users-in-control-activity-diagram/blob/main/assets/IMG_0026.jpg" />
 
 ## 🖥 Uitleg pseudo-code 
-<!-- Leg de pseudo-code in de control fow uit -->
+In mijn activity diagram is te zien hoe de API data in het overzicht van het CRUD word ingeladen. Dit proces gaat als volgt:
+
+1. Index.js word aangesproken.
+2. De functie getApiData() word aangesproken. Hierbij word ook de loading state aangezet.
+3. Vervolgens word de renderData() functie aangesproken. Hierbij word de data in de HTML gerenderd en word de loading state uitgezet.
+4. Er is nog een uitzondering, die e.v.t kan verwijzen naar de error state.
 
 ## Licentie
 
